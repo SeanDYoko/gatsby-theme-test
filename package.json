@@ -1,8 +1,11 @@
 {
-  "name": "gatsby-theme-test",
+  "name": "@SeanDYoko/gatsby-theme-test",
   "version": "0.0.1",
   "license": "MIT",
   "main": "index.js",
+  "repository": {
+    "url": "git://github.com/SeanDYoko/gatsby-theme-test"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
