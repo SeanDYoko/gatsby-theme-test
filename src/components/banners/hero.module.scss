@@ -1,0 +1,126 @@
+@import "../../assets/scss/main.scss";
+.hero,
+.hero::before,
+.hero::after {
+  height: 555px;
+  background-size: 1060px !important;
+  background-position: 76% bottom !important;
+}
+
+.banner-content {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    strong {
+      font-weight: 800;
+    }
+  }
+  p {
+    font-size: 14px;
+    margin: 30px 0 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero,
+  .hero::before,
+  .hero::after {
+    height: 580px;
+    background-size: 1300px !important;
+    background-position: 58% 68% !important;
+  }
+
+  .banner-content {
+    top: 50%;
+    left: 80px;
+    transform: translate(0, -50%);
+    z-index: 1;
+    width: 232px;
+    h1,
+    p {
+      text-align: left;
+    }
+  }
+  .banner-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    width: 384px;
+    height: 515px;
+    background-color: #444;
+    opacity: 0.75;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero,
+  .hero::before,
+  .hero::after {
+    height: 585px;
+    background-size: 1800px !important;
+    background-position: 38% 48% !important;
+  }
+  .banner-content {
+    left: 140px;
+    width: 398px;
+    h1 {
+      font-size: 52px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .banner-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -140px;
+    transform: translateY(-50%);
+    width: 683px;
+    height: 485px;
+    background-color: #444;
+    opacity: 0.75;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero,
+  .hero::before,
+  .hero::after {
+    height: 640px;
+    background-size: cover !important;
+    background-position: 1% 46% !important;
+  }
+  .banner-content {
+    left: 240px;
+    width: 415px;
+    h1 {
+      font-size: 55px;
+    }
+  }
+  .banner-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -240px;
+    transform: translateY(-50%);
+    width: 960px;
+    height: 540px;
+    background-color: #444;
+    opacity: 0.75;
+    z-index: -1;
+  }
+}

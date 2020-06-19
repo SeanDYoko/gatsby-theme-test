@@ -1,0 +1,56 @@
+@import "../../assets/scss/main.scss";
+
+.footer {
+  background-color: var(--secondary);
+  padding: 30px 0 60px;
+}
+.footer-inner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.upper-footer {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background: rgba(181, 181, 181, 0.6);
+  border: none;
+}
+
+.location {
+  text-align: center;
+  color: #fff;
+}
+.office {
+  margin: 15px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.address {
+  font-size: 14px;
+}
+
+.credits {
+  color: #fff;
+  margin-top: 20px;
+}
+
+@media (min-width: 1300px) {
+  .upper-footer {
+    flex-flow: row;
+    width: 80%;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../assets/scss/main.scss";
+.nav-bar {
+  height: 64px;
+  @include boxShadow(0, 4px, 12px, 0.12);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 9;
+}
+.nav-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.phone {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-grey;
+  @include transition(background-color, 0.3s, 0s);
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+.logo {
+  width: 102px;
+}
+
+.menu {
+  font-size: 26px;
+  color: darken($primary, 50%);
+  cursor: pointer;
+  @include transition(color, 0.3s, 0s);
+  &:hover {
+    color: $primary;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-bar {
+    height: 115px;
+    z-index: 9;
+  }
+  .logo {
+    width: 150px;
+  }
+}

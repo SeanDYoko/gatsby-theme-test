@@ -1,0 +1,59 @@
+@import "../../assets/scss/main.scss";
+@media (min-width: 600px) {
+  .secondary-header-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    height: 66px;
+    font-size: 18px;
+    p {
+      margin-right: 20px;
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .phone {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    @include transition(background-color, 0.3s, 0s);
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+  .phone-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+    @include transition(color, 0.3s, 0s);
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .secondary-header {
+    background-color: var(--secondary);
+    height: 66px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+  }
+  .phone {
+    background-color: #fff;
+    color: $dark-grey;
+    margin-left: 20px;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

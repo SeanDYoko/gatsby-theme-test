@@ -1,0 +1,17 @@
+@mixin sectionPadding {
+  padding: 80px 0;
+}
+
+@mixin coverImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@mixin transition($property, $duration, $delay: 0s) {
+  transition: ($property $duration ease-in-out $delay);
+}
+
+@mixin boxShadow($x, $y, $blur, $opacity) {
+  box-shadow: $x $y $blur rgba(0, 0, 0, $opacity);
+}
