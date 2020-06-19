@@ -22,7 +22,7 @@ const Header = ({ logo, sticky }) => {
             className={styles.logo}
           />
         </Link>
-        Nav links here
+        Nav links go here. 
         <FaBars className={styles.menu} />
       </div>
     </header>
