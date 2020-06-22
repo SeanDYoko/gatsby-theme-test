@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "index.js",
   "repository": {
-    "url": "git://github.com/SeanDYoko/gatsby-theme-test"
+    "url": "git://github.com/seandyoko/gatsby-theme-test"
   },
   "scripts": {
     "build": "gatsby build",
@@ -41,8 +41,5 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
     "styled-components": "^5.1.1"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
