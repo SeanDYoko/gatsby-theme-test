@@ -1,14 +1,12 @@
 {
-  "name": "@jblobs/gatsby-theme-test",
-  "version": "0.6.0",
+  "name": "@seandyoko/gatsby-theme-test",
+  "version": "0.5.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {
-    "url": "git://github.com/jblobs/gatsby-theme-test"
+    "url": "git://github.com/seandyoko/gatsby-theme-test"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
