@@ -6,7 +6,6 @@
   "repository": {
     "url": "git://github.com/seandyoko/gatsby-theme-test"
   },
-  "package-name": "git+https://afe38c20de8a3f2d43cdf3b06e27bce37bf4d755:x-oauth-basic@github.com/seandyoko/gatsby-theme-test.git",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
