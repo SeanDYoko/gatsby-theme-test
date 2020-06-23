@@ -9,7 +9,7 @@ const SecondaryHeader = ({ phone }) => {
         <a href={`tel: ${phone}`} className={styles.secondaryHeaderInner}>
           <p>Call NOW!!!:</p>
           <span className={styles.phoneLink}>
-            {phone} -- \o
+            {phone} \o
             <div className={styles.phone}>
               <FaPhoneAlt />
             </div>
