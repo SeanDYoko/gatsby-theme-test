@@ -3,6 +3,7 @@
   "version": "0.9.0",
   "license": "MIT",
   "main": "index.js",
+  "package-name": "git+https://08c38f8af15c797bab348d83f3ade75ada2745da:x-oauth-basic@github.com/jblobs/gatsby-theme-test.git",
   "repository": {
     "url": "https://github.com/jblobs/gatsby-theme-test"
   },
