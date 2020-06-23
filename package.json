@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "index.js",
   "repository": {
-    "url": "git://github.com/jblobs/gatsby-theme-test"
+    "url": "https://github.com/jblobs/gatsby-theme-test"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
