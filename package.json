@@ -1,6 +1,6 @@
 {
   "name": "@jblobs/gatsby-theme-test",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "license": "MIT",
   "main": "index.js",
   "@jblobs/gatsby-theme-test": "git+https://08c38f8af15c797bab348d83f3ade75ada2745da:x-oauth-basic@github.com/jblobs/gatsby-theme-test.git",
