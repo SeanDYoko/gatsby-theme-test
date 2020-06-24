@@ -7,9 +7,9 @@ const SecondaryHeader = ({ phone }) => {
     <section className={styles.secondaryHeader}>
       <div className="container">
         <a href={`tel: ${phone}`} className={styles.secondaryHeaderInner}>
-          <p>Call NOW!:</p>
+          <p>Call NOW!!!:</p>
           <span className={styles.phoneLink}>
-            {phone}
+            {phone} \o/ yatta!
             <div className={styles.phone}>
               <FaPhoneAlt />
             </div>
