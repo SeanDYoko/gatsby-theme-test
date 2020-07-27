@@ -34,11 +34,11 @@
   }
   .menu {
     font-size: 26px;
-    color: darken($primary, 50%);
+    color: $dark-grey;
     cursor: pointer;
     @include transition(color, 0.3s, 0s);
     &:hover {
-      color: $primary;
+      color: var(--primary);
     }
   }
   .nav-bar-sticky {

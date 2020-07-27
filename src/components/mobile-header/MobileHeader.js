@@ -26,7 +26,7 @@ const MobileHeader = ({ logo, phone }) => {
 };
 
 MobileHeader.propTypes = {
-  logo: PropTypes.object,
+  logo: PropTypes.array,
   phone: PropTypes.string,
 };
 

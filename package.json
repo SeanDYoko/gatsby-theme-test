@@ -1,10 +1,10 @@
 {
-  "name": "@seandyoko/gatsby-theme-test",
+  "name": "gatsby-theme-katahdin",
   "version": "0.6.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {
-    "url": "git://github.com/seandyoko/gatsby-theme-test"
+    "url": "git://github.com/lobster-marketing/gatsby-theme-katahdin"
   },
   "scripts": {
     "build": "gatsby build",

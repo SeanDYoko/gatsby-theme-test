@@ -5,20 +5,20 @@ import SecondaryHeader from "./secondary-header/SecondaryHeader";
 import MobileHeader from "./mobile-header/MobileHeader";
 import Header from "./main-header/Header";
 import Footer from "./footer/Footer";
-import Theme from "./Theme";
-import { AppContext } from "../assets/context/context";
+import Theme from "./theme/Theme";
+import { AppContext } from "./context/context";
 
 const Layout = ({ children }) => {
   const { size, height } = React.useContext(AppContext);
   const data = useStaticQuery(getData);
   const { logo } = data.settings.elements.main_logo;
+  const location = data.location.elements; 
   const { footerLogo } = data.settings.elements.footer;
   const { primary, secondary, accent } = data.settings.elements;
 
   const { phone } = data.location.elements.phone;
   const social = data.social.elements;
-  console.log(height);
-
+  
   if (size < 768) {
     return (
       <div className="wrapper">
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
           <MobileHeader logo={logo} phone={phone} />
           <main className="page-content">{children}</main>
         </div>
-        <Footer social={social} logo={footerLogo} />
+        <Footer social={social} logo={footerLogo} location={location} />
       </div>
     );
   } else {
@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
           )}
           <main className="page-content">{children}</main>
         </div>
-        <Footer social={social} logo={footerLogo} />
+        <Footer social={social} logo={footerLogo} location={location}/>
       </div>
     );
   }
@@ -80,8 +80,26 @@ const getData = graphql`
       elements: { featured: { value: { elemMatch: { name: { eq: "Yes" } } } } }
     ) {
       elements {
+        title: location_title {
+          value
+        }
+        address1 {
+          value
+        }
+        address2 {
+          value
+        }
+        city {
+          value
+        }
+        state {
+          value
+        }
+        zip {
+          value
+        }
         phone {
-          phone: value
+          value
         }
       }
     }

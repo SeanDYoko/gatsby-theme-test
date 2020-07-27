@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./footer.module.scss";
-import { Link, useStaticQuery, graphql } from "gatsby";
-import SocialIcons from "../socialIcons/SocialIcons";
+import { Link} from "gatsby";
+import PropTypes from 'prop-types'
+import SocialIcons from "../social-icons/SocialIcons";
 import FooterLocation from "./FooterLocation";
 import Credits from "./Credits";
-const Footer = ({ social, logo }) => {
-  const [brand] = logo;
-  const location = useStaticQuery(getLocation).location.elements;
-
+const Footer = ({ social, logo, location }) => {
+  const [brand] = logo; 
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -32,36 +31,16 @@ const Footer = ({ social, logo }) => {
   );
 };
 
-const getLocation = graphql`
-  query getLocation {
-    location: kontentItemLocation(
-      elements: { featured: { value: { elemMatch: { name: { eq: "Yes" } } } } }
-    ) {
-      elements {
-        title: location_title {
-          value
-        }
-        address1 {
-          value
-        }
-        address2 {
-          value
-        }
-        city {
-          value
-        }
-        state {
-          value
-        }
-        zip {
-          value
-        }
-        phone {
-          value
-        }
-      }
-    }
-  }
-`;
+Footer.propTypes = {
+  social: PropTypes.object,
+  logo: PropTypes.array,
+  location: PropTypes.object
+}
+
+Footer.defaultProps = {
+  social: {},
+  logo: [],
+  location: {}
+}
 
 export default Footer;

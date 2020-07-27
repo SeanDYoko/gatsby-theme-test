@@ -3,7 +3,7 @@ import BgImg from "gatsby-background-image";
 import styles from "./hero.module.scss";
 import { RichTextElement } from "@kentico/gatsby-kontent-components";
 import { Link } from "gatsby";
-import { AppContext } from "../../assets/context/context";
+import { AppContext } from "../context/context";
 const Hero = ({ banner }) => {
   const { size } = React.useContext(AppContext);
 

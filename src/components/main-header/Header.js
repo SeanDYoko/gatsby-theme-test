@@ -5,8 +5,6 @@ import styles from "./header.module.scss";
 import { FaBars } from "react-icons/fa";
 
 const Header = ({ logo, sticky }) => {
-  console.log(sticky);
-
   const [brand] = logo;
   return (
     <header
@@ -30,12 +28,12 @@ const Header = ({ logo, sticky }) => {
 };
 
 Header.propTypes = {
-  logo: PropTypes.object,
+  logo: PropTypes.array,
   sticky: PropTypes.bool,
 };
 
 Header.defaultProps = {
-  logo: ``,
+  logo: [],
   sticky: false,
 };
 

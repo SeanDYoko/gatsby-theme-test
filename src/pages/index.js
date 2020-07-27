@@ -2,8 +2,8 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Hero from "../components/banners/Hero";
+import SEO from "../components/seo/seo";
+import Hero from "../components/hero/Hero";
 
 const IndexPage = () => {
   const [data] = useStaticQuery(getHomePage).page.nodes;
