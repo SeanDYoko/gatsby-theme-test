@@ -1,10 +1,22 @@
 {
+<<<<<<< HEAD
   "name": "gatsby-theme-katahdin",
   "version": "0.6.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "url": "git://github.com/lobster-marketing/gatsby-theme-katahdin"
+=======
+  "name": "@jblobs/gatsby-theme-test",
+  "version": "0.16.1",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/jblobs/gatsby-theme-test"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+>>>>>>> ff237c2eaf8bfb68ca882d5b0423f935501b213c
   },
   "scripts": {
     "build": "gatsby build",
